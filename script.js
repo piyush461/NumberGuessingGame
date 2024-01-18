@@ -69,8 +69,9 @@ function newGame(){
         randomNumber = parseInt((Math.random()*21)+1);
         prevGuess = []
         numGuess = 1
-        guessSlot.innerHTML = ''
+        guessSlot.innerHTML = '';
         remaining.innerHTML = `${4 - numGuess} `;
+        lowOrHigh.innerHTML = ``;
         userInput.removeAttribute('disabled')
         startOver.removeChild(p)
         playGame = true;
