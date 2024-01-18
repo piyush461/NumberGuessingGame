@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Number guessing game</h1>
+        <p id="rule">Try and guess the right number between 0 and 21.
+        You have 3 attempts to guess the right number.</p>
+        <form class="form">
+            <label for="guessField" id="guess">Guess A Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="submit" value="Submit" class="guessSubmit">
+        </form>
+        <div class="resultPara">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span> </p>
+            <p class="lowOrHigh"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

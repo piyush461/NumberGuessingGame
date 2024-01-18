@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Salsa', cursive;
+    box-sizing: border-box;
+    background-image: url(bg.png);
+    background-position: fix;
+    background-size: cover;
+    height: 97vh;
+}
+
+.wrapper{
+    width: 50vw;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(132, 18, 190);
+    padding: 1.5vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.guessField{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 4px;
+    border: none;
+}
+.wrapper h1{
+    font-size: 4vw;
+}
+
+#rule{
+    margin: 0 10%;
+    font-size: 1.7vw;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.form>label,input{
+    margin:8px;
+}
+
+.form>label{
+    font-weight: 600;
+    font-size: large;
+}
+
+.resultPara{
+    background-color: rgb(129, 44, 219);
+    padding: 0% 5%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+#newGame{
+    width: max-content;
+    border-radius: 10px;
+    height: 35px;
+    background-color: #000000;
+    color: white;
+    font-weight:500;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.guessSubmit:hover{
+    background-color: #300c80;
+}
+
+.guessSubmit{
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.lowOrHigh span{
+    color: rgb(0, 0, 0);
+}
+
+#newGame:hover{
+    background-color: #300c80;
+}
+
+@media (max-width:600px) {
+body{
+    height: 90vh;
+    background-image: url(bg2.png);
+    background-size: 100vw 100vh;
+}
+
+    .wrapper{
+        width: 90vw;
+        height: fit-content;
+        color: rgba(255, 255, 255, 0.795);
+        padding: 3vw;
+    }
+    #rule{
+        font-size: 3.1vw;
+    }
+
+    .resultPara{
+        color: rgba(255, 255, 255, 0.587);
+    }
+
+    .guessSubmit{
+        background-color: #af23f4;
+    }
+
+    #newGame{
+        background-color: #af23f4;
+    }
+
+    .lowOrHigh span{
+        color: white;
+    }
+}
